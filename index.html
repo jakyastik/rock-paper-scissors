@@ -3,9 +3,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Rock, Paper, Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="container">
+      <div class="heading">
+        <h1>Rock, Paper, Scissors</h1>
+        <p class="messageBox">
+          You will play 10 Rounds. Start by choosing your option.
+        </p>
+        <div class="scoreContainer">
+          <div class="computer">
+            <h4>Computer</h4>
+            <p class="computerScore"></p>
+          </div>
+          <div class="human">
+            <h4>Human</h4>
+            <p class="humanScore"></p>
+          </div>
+        </div>
+        <div class="buttonContainer">
+          <button onClick="rockChoice()" class="rockButton">Rock</button>
+          <button onClick="paperChoice()" class="paperButton">Paper</button>
+          <button onClick="scissorsChoice()" class="scissorsButton">
+            Scissors
+          </button>
+        </div>
+      </div>
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
